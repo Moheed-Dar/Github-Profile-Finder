@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Courier New;
+    background-image: url(imgs/astronomy-beautiful-clouds-355465.jpg);
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.container{
+    align-items: center;
+    height: 100vh;
+}
+
+#header{
+    margin-top: 10%;
+    padding-bottom: 3%;
+    font-family: Cambria;
+    color: yellow;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#searchinput{
+    border: none;
+}
+
+#searchinput:hover{
+    border: 5px;
+    box-shadow: 1px 2px 20px white;
+    cursor: text;
+}
+
+#buttonmain{
+    width: 100%;
+}
+
+#buttonmain:hover{
+    width: 130px;
+    box-shadow: 1px 2px 20px greenyellow;
+}
+
+#cardbox{
+    background-color: white;
+    margin: auto;
+    border-radius: 30px;
+    transition: 0.5s ease-out;
+}
+
+#cardbox:hover{
+    transform: rotate(-1deg) scale(1.03);
+    transition: 0.5s ease-in-out;
+} /* <-- Fixed: Closing this rule */
+
+.avatar > img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.profile-info {
+    margin-left: 15px;
+}
+
+#buttoncard{
+    width: 100%;
+
+    margin-left: 300px;
+}
+
+@media (max-width: 600px) {
+    #cardbox {
+        width: 100%;
+        margin: 10px 0;
+    }
+    #buttoncard{
+        justify-content: center;
+        margin-left: 2px;
+    }
+}
+
+@media (min-width: 601px) {
+    #cardbox {
+        width: 780px;
+    }
+    #buttoncard{
+        justify-content: center;
+        
+    }
+}
